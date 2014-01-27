@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E9CD1831896F88C003B1458 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9CD1821896F88C003B1458 /* Foundation.framework */; };
+		9E9CD1851896F88C003B1458 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9CD1841896F88C003B1458 /* CoreGraphics.framework */; };
+		9E9CD1871896F88C003B1458 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9CD1861896F88C003B1458 /* UIKit.framework */; };
+		9E9CD18D1896F88C003B1458 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E9CD18B1896F88C003B1458 /* InfoPlist.strings */; };
+		9E9CD18F1896F88C003B1458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CD18E1896F88C003B1458 /* main.m */; };
+		9E9CD1931896F88C003B1458 /* CSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CD1921896F88C003B1458 /* CSAppDelegate.m */; };
+		9E9CD1961896F88C003B1458 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9CD1941896F88C003B1458 /* Main_iPhone.storyboard */; };
+		9E9CD1991896F88C003B1458 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9CD1971896F88C003B1458 /* Main_iPad.storyboard */; };
+		9E9CD19C1896F88C003B1458 /* CSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CD19B1896F88C003B1458 /* CSViewController.m */; };
+		9E9CD19E1896F88C003B1458 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E9CD19D1896F88C003B1458 /* Images.xcassets */; };
+		9E9CD1A51896F88C003B1458 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9CD1A41896F88C003B1458 /* XCTest.framework */; };
+		9E9CD1A61896F88C003B1458 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9CD1821896F88C003B1458 /* Foundation.framework */; };
+		9E9CD1A71896F88C003B1458 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9CD1861896F88C003B1458 /* UIKit.framework */; };
+		9E9CD1AF1896F88C003B1458 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E9CD1AD1896F88C003B1458 /* InfoPlist.strings */; };
+		9E9CD1B11896F88C003B1458 /* LocationSpikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CD1B01896F88C003B1458 /* LocationSpikeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E9CD1A81896F88C003B1458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E9CD1771896F88C003B1458 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E9CD17E1896F88C003B1458;
+			remoteInfo = LocationSpike;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9E9CD17F1896F88C003B1458 /* LocationSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E9CD1821896F88C003B1458 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9E9CD1841896F88C003B1458 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9E9CD1861896F88C003B1458 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9E9CD18A1896F88C003B1458 /* LocationSpike-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocationSpike-Info.plist"; sourceTree = "<group>"; };
+		9E9CD18C1896F88C003B1458 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E9CD18E1896F88C003B1458 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E9CD1901896F88C003B1458 /* LocationSpike-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationSpike-Prefix.pch"; sourceTree = "<group>"; };
+		9E9CD1911896F88C003B1458 /* CSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAppDelegate.h; sourceTree = "<group>"; };
+		9E9CD1921896F88C003B1458 /* CSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAppDelegate.m; sourceTree = "<group>"; };
+		9E9CD1951896F88C003B1458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		9E9CD1981896F88C003B1458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		9E9CD19A1896F88C003B1458 /* CSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSViewController.h; sourceTree = "<group>"; };
+		9E9CD19B1896F88C003B1458 /* CSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSViewController.m; sourceTree = "<group>"; };
+		9E9CD19D1896F88C003B1458 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9E9CD1A31896F88C003B1458 /* LocationSpikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationSpikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E9CD1A41896F88C003B1458 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9E9CD1AC1896F88C003B1458 /* LocationSpikeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocationSpikeTests-Info.plist"; sourceTree = "<group>"; };
+		9E9CD1AE1896F88C003B1458 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E9CD1B01896F88C003B1458 /* LocationSpikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationSpikeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E9CD17C1896F88C003B1458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9CD1851896F88C003B1458 /* CoreGraphics.framework in Frameworks */,
+				9E9CD1871896F88C003B1458 /* UIKit.framework in Frameworks */,
+				9E9CD1831896F88C003B1458 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E9CD1A01896F88C003B1458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9CD1A51896F88C003B1458 /* XCTest.framework in Frameworks */,
+				9E9CD1A71896F88C003B1458 /* UIKit.framework in Frameworks */,
+				9E9CD1A61896F88C003B1458 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E9CD1761896F88C003B1458 = {
+			isa = PBXGroup;
+			children = (
+				9E9CD1881896F88C003B1458 /* LocationSpike */,
+				9E9CD1AA1896F88C003B1458 /* LocationSpikeTests */,
+				9E9CD1811896F88C003B1458 /* Frameworks */,
+				9E9CD1801896F88C003B1458 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E9CD1801896F88C003B1458 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E9CD17F1896F88C003B1458 /* LocationSpike.app */,
+				9E9CD1A31896F88C003B1458 /* LocationSpikeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E9CD1811896F88C003B1458 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E9CD1821896F88C003B1458 /* Foundation.framework */,
+				9E9CD1841896F88C003B1458 /* CoreGraphics.framework */,
+				9E9CD1861896F88C003B1458 /* UIKit.framework */,
+				9E9CD1A41896F88C003B1458 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E9CD1881896F88C003B1458 /* LocationSpike */ = {
+			isa = PBXGroup;
+			children = (
+				9E9CD1911896F88C003B1458 /* CSAppDelegate.h */,
+				9E9CD1921896F88C003B1458 /* CSAppDelegate.m */,
+				9E9CD1941896F88C003B1458 /* Main_iPhone.storyboard */,
+				9E9CD1971896F88C003B1458 /* Main_iPad.storyboard */,
+				9E9CD19A1896F88C003B1458 /* CSViewController.h */,
+				9E9CD19B1896F88C003B1458 /* CSViewController.m */,
+				9E9CD19D1896F88C003B1458 /* Images.xcassets */,
+				9E9CD1891896F88C003B1458 /* Supporting Files */,
+			);
+			path = LocationSpike;
+			sourceTree = "<group>";
+		};
+		9E9CD1891896F88C003B1458 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E9CD18A1896F88C003B1458 /* LocationSpike-Info.plist */,
+				9E9CD18B1896F88C003B1458 /* InfoPlist.strings */,
+				9E9CD18E1896F88C003B1458 /* main.m */,
+				9E9CD1901896F88C003B1458 /* LocationSpike-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E9CD1AA1896F88C003B1458 /* LocationSpikeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E9CD1B01896F88C003B1458 /* LocationSpikeTests.m */,
+				9E9CD1AB1896F88C003B1458 /* Supporting Files */,
+			);
+			path = LocationSpikeTests;
+			sourceTree = "<group>";
+		};
+		9E9CD1AB1896F88C003B1458 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E9CD1AC1896F88C003B1458 /* LocationSpikeTests-Info.plist */,
+				9E9CD1AD1896F88C003B1458 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E9CD17E1896F88C003B1458 /* LocationSpike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E9CD1B41896F88C003B1458 /* Build configuration list for PBXNativeTarget "LocationSpike" */;
+			buildPhases = (
+				9E9CD17B1896F88C003B1458 /* Sources */,
+				9E9CD17C1896F88C003B1458 /* Frameworks */,
+				9E9CD17D1896F88C003B1458 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocationSpike;
+			productName = LocationSpike;
+			productReference = 9E9CD17F1896F88C003B1458 /* LocationSpike.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E9CD1A21896F88C003B1458 /* LocationSpikeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E9CD1B71896F88C003B1458 /* Build configuration list for PBXNativeTarget "LocationSpikeTests" */;
+			buildPhases = (
+				9E9CD19F1896F88C003B1458 /* Sources */,
+				9E9CD1A01896F88C003B1458 /* Frameworks */,
+				9E9CD1A11896F88C003B1458 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E9CD1A91896F88C003B1458 /* PBXTargetDependency */,
+			);
+			name = LocationSpikeTests;
+			productName = LocationSpikeTests;
+			productReference = 9E9CD1A31896F88C003B1458 /* LocationSpikeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E9CD1771896F88C003B1458 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Keith Ermel";
+				TargetAttributes = {
+					9E9CD1A21896F88C003B1458 = {
+						TestTargetID = 9E9CD17E1896F88C003B1458;
+					};
+				};
+			};
+			buildConfigurationList = 9E9CD17A1896F88C003B1458 /* Build configuration list for PBXProject "LocationSpike" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E9CD1761896F88C003B1458;
+			productRefGroup = 9E9CD1801896F88C003B1458 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E9CD17E1896F88C003B1458 /* LocationSpike */,
+				9E9CD1A21896F88C003B1458 /* LocationSpikeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E9CD17D1896F88C003B1458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9CD1991896F88C003B1458 /* Main_iPad.storyboard in Resources */,
+				9E9CD19E1896F88C003B1458 /* Images.xcassets in Resources */,
+				9E9CD1961896F88C003B1458 /* Main_iPhone.storyboard in Resources */,
+				9E9CD18D1896F88C003B1458 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E9CD1A11896F88C003B1458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9CD1AF1896F88C003B1458 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E9CD17B1896F88C003B1458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9CD1931896F88C003B1458 /* CSAppDelegate.m in Sources */,
+				9E9CD18F1896F88C003B1458 /* main.m in Sources */,
+				9E9CD19C1896F88C003B1458 /* CSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E9CD19F1896F88C003B1458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9CD1B11896F88C003B1458 /* LocationSpikeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E9CD1A91896F88C003B1458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E9CD17E1896F88C003B1458 /* LocationSpike */;
+			targetProxy = 9E9CD1A81896F88C003B1458 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E9CD18B1896F88C003B1458 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E9CD18C1896F88C003B1458 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9E9CD1941896F88C003B1458 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E9CD1951896F88C003B1458 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		9E9CD1971896F88C003B1458 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E9CD1981896F88C003B1458 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		9E9CD1AD1896F88C003B1458 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E9CD1AE1896F88C003B1458 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E9CD1B21896F88C003B1458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E9CD1B31896F88C003B1458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E9CD1B51896F88C003B1458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LocationSpike/LocationSpike-Prefix.pch";
+				INFOPLIST_FILE = "LocationSpike/LocationSpike-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9E9CD1B61896F88C003B1458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LocationSpike/LocationSpike-Prefix.pch";
+				INFOPLIST_FILE = "LocationSpike/LocationSpike-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9E9CD1B81896F88C003B1458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LocationSpike.app/LocationSpike";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LocationSpike/LocationSpike-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LocationSpikeTests/LocationSpikeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9E9CD1B91896F88C003B1458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LocationSpike.app/LocationSpike";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LocationSpike/LocationSpike-Prefix.pch";
+				INFOPLIST_FILE = "LocationSpikeTests/LocationSpikeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E9CD17A1896F88C003B1458 /* Build configuration list for PBXProject "LocationSpike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E9CD1B21896F88C003B1458 /* Debug */,
+				9E9CD1B31896F88C003B1458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E9CD1B41896F88C003B1458 /* Build configuration list for PBXNativeTarget "LocationSpike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E9CD1B51896F88C003B1458 /* Debug */,
+				9E9CD1B61896F88C003B1458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9E9CD1B71896F88C003B1458 /* Build configuration list for PBXNativeTarget "LocationSpikeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E9CD1B81896F88C003B1458 /* Debug */,
+				9E9CD1B91896F88C003B1458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E9CD1771896F88C003B1458 /* Project object */;
+}
