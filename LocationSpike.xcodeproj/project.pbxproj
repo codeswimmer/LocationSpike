@@ -22,6 +22,11 @@
 		9E9CD1A71896F88C003B1458 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9CD1861896F88C003B1458 /* UIKit.framework */; };
 		9E9CD1AF1896F88C003B1458 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E9CD1AD1896F88C003B1458 /* InfoPlist.strings */; };
 		9E9CD1B11896F88C003B1458 /* LocationSpikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CD1B01896F88C003B1458 /* LocationSpikeTests.m */; };
+		9E9CD1BC1896F8CA003B1458 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9CD1BB1896F8CA003B1458 /* CoreLocation.framework */; };
+		9E9CD1BF1896FC6D003B1458 /* CSStandardLocationServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CD1BE1896FC6D003B1458 /* CSStandardLocationServicesViewController.m */; };
+		9E9CD1C21896FDAA003B1458 /* CSSignificantChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CD1C11896FDAA003B1458 /* CSSignificantChangeViewController.m */; };
+		9E9CD1C418980FDB003B1458 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9CD1C318980FDB003B1458 /* CoreBluetooth.framework */; };
+		9E9CD1C718981009003B1458 /* CSBeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CD1C618981009003B1458 /* CSBeaconViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,14 @@
 		9E9CD1AC1896F88C003B1458 /* LocationSpikeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocationSpikeTests-Info.plist"; sourceTree = "<group>"; };
 		9E9CD1AE1896F88C003B1458 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9E9CD1B01896F88C003B1458 /* LocationSpikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationSpikeTests.m; sourceTree = "<group>"; };
+		9E9CD1BB1896F8CA003B1458 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9E9CD1BD1896FC6D003B1458 /* CSStandardLocationServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStandardLocationServicesViewController.h; sourceTree = "<group>"; };
+		9E9CD1BE1896FC6D003B1458 /* CSStandardLocationServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStandardLocationServicesViewController.m; sourceTree = "<group>"; };
+		9E9CD1C01896FDAA003B1458 /* CSSignificantChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSignificantChangeViewController.h; sourceTree = "<group>"; };
+		9E9CD1C11896FDAA003B1458 /* CSSignificantChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSignificantChangeViewController.m; sourceTree = "<group>"; };
+		9E9CD1C318980FDB003B1458 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		9E9CD1C518981009003B1458 /* CSBeaconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBeaconViewController.h; sourceTree = "<group>"; };
+		9E9CD1C618981009003B1458 /* CSBeaconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBeaconViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E9CD1C418980FDB003B1458 /* CoreBluetooth.framework in Frameworks */,
+				9E9CD1BC1896F8CA003B1458 /* CoreLocation.framework in Frameworks */,
 				9E9CD1851896F88C003B1458 /* CoreGraphics.framework in Frameworks */,
 				9E9CD1871896F88C003B1458 /* UIKit.framework in Frameworks */,
 				9E9CD1831896F88C003B1458 /* Foundation.framework in Frameworks */,
@@ -103,6 +118,8 @@
 		9E9CD1811896F88C003B1458 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E9CD1C318980FDB003B1458 /* CoreBluetooth.framework */,
+				9E9CD1BB1896F8CA003B1458 /* CoreLocation.framework */,
 				9E9CD1821896F88C003B1458 /* Foundation.framework */,
 				9E9CD1841896F88C003B1458 /* CoreGraphics.framework */,
 				9E9CD1861896F88C003B1458 /* UIKit.framework */,
@@ -116,12 +133,17 @@
 			children = (
 				9E9CD1911896F88C003B1458 /* CSAppDelegate.h */,
 				9E9CD1921896F88C003B1458 /* CSAppDelegate.m */,
-				9E9CD1941896F88C003B1458 /* Main_iPhone.storyboard */,
-				9E9CD1971896F88C003B1458 /* Main_iPad.storyboard */,
 				9E9CD19A1896F88C003B1458 /* CSViewController.h */,
 				9E9CD19B1896F88C003B1458 /* CSViewController.m */,
-				9E9CD19D1896F88C003B1458 /* Images.xcassets */,
+				9E9CD1BD1896FC6D003B1458 /* CSStandardLocationServicesViewController.h */,
+				9E9CD1BE1896FC6D003B1458 /* CSStandardLocationServicesViewController.m */,
+				9E9CD1C01896FDAA003B1458 /* CSSignificantChangeViewController.h */,
+				9E9CD1C11896FDAA003B1458 /* CSSignificantChangeViewController.m */,
+				9E9CD1C518981009003B1458 /* CSBeaconViewController.h */,
+				9E9CD1C618981009003B1458 /* CSBeaconViewController.m */,
 				9E9CD1891896F88C003B1458 /* Supporting Files */,
+				9E9CD1BA1896F899003B1458 /* UX */,
+				9E9CD19D1896F88C003B1458 /* Images.xcassets */,
 			);
 			path = LocationSpike;
 			sourceTree = "<group>";
@@ -153,6 +175,15 @@
 				9E9CD1AD1896F88C003B1458 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E9CD1BA1896F899003B1458 /* UX */ = {
+			isa = PBXGroup;
+			children = (
+				9E9CD1941896F88C003B1458 /* Main_iPhone.storyboard */,
+				9E9CD1971896F88C003B1458 /* Main_iPad.storyboard */,
+			);
+			name = UX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E9CD1C718981009003B1458 /* CSBeaconViewController.m in Sources */,
+				9E9CD1BF1896FC6D003B1458 /* CSStandardLocationServicesViewController.m in Sources */,
+				9E9CD1C21896FDAA003B1458 /* CSSignificantChangeViewController.m in Sources */,
 				9E9CD1931896F88C003B1458 /* CSAppDelegate.m in Sources */,
 				9E9CD18F1896F88C003B1458 /* main.m in Sources */,
 				9E9CD19C1896F88C003B1458 /* CSViewController.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "CSViewController.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface CSViewController ()
 
@@ -14,10 +15,20 @@
 
 @implementation CSViewController
 
+-(BOOL)checkLocationServicesAvailability
+{
+    BOOL canDo = [CLLocationManager locationServicesEnabled];
+    NSLog(@"canDo: %d", canDo);
+    return canDo;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+	if (![self checkLocationServicesAvailability]) {
+        NSLog(@"Location services unavailable");
+    }
 }
 
 - (void)didReceiveMemoryWarning
