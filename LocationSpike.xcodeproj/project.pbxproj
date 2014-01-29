@@ -27,6 +27,7 @@
 		9E9CD1C21896FDAA003B1458 /* CSSignificantChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CD1C11896FDAA003B1458 /* CSSignificantChangeViewController.m */; };
 		9E9CD1C418980FDB003B1458 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9CD1C318980FDB003B1458 /* CoreBluetooth.framework */; };
 		9E9CD1C718981009003B1458 /* CSBeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CD1C618981009003B1458 /* CSBeaconViewController.m */; };
+		9E9CD2121898837D003B1458 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9CD2111898837D003B1458 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		9E9CD1C318980FDB003B1458 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		9E9CD1C518981009003B1458 /* CSBeaconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBeaconViewController.h; sourceTree = "<group>"; };
 		9E9CD1C618981009003B1458 /* CSBeaconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBeaconViewController.m; sourceTree = "<group>"; };
+		9E9CD2111898837D003B1458 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E9CD2121898837D003B1458 /* AudioToolbox.framework in Frameworks */,
 				9E9CD1C418980FDB003B1458 /* CoreBluetooth.framework in Frameworks */,
 				9E9CD1BC1896F8CA003B1458 /* CoreLocation.framework in Frameworks */,
 				9E9CD1851896F88C003B1458 /* CoreGraphics.framework in Frameworks */,
@@ -118,6 +121,7 @@
 		9E9CD1811896F88C003B1458 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E9CD2111898837D003B1458 /* AudioToolbox.framework */,
 				9E9CD1C318980FDB003B1458 /* CoreBluetooth.framework */,
 				9E9CD1BB1896F8CA003B1458 /* CoreLocation.framework */,
 				9E9CD1821896F88C003B1458 /* Foundation.framework */,
@@ -509,6 +513,7 @@
 				9E9CD1B61896F88C003B1458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E9CD1B71896F88C003B1458 /* Build configuration list for PBXNativeTarget "LocationSpikeTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +522,7 @@
 				9E9CD1B91896F88C003B1458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

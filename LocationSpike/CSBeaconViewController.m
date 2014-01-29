@@ -8,6 +8,9 @@
 
 #import "CSBeaconViewController.h"
 
+#import <AudioToolbox/AudioToolbox.h>
+@import CoreBluetooth;
+@import CoreLocation;
 
 NSString *const kBeaconUUID             = @"0C99E399-BAD0-4A20-9876-CB4D5E115902";
 NSString *const kMiniPadBeaconUUID      = @"C4269F71-EAA5-4681-AF03-8600897472EB";
@@ -17,12 +20,24 @@ NSUInteger const kMaxPixelsID           = 0x7294da4;
 NSUInteger const kiPhone5ID             = 0x3c8ab9c0;
 NSUInteger const kMiniPad               = 0xecd85729;
 
+NSUInteger const kFarSoundID            = 1031;
+NSUInteger const kNearSoundID           = 1033;
+NSUInteger const kImmediateSoundID      = 1036;
+NSUInteger const kUnknownSoundID        = 1029;
 
-@interface CSBeaconViewController ()
+NSUInteger const kInsideSoundID         = 1025;
+NSUInteger const kOutsideSoundID        = 1024;
+
+@interface CSBeaconViewController ()<CBPeripheralManagerDelegate, CLLocationManagerDelegate>
 @property (strong, nonatomic, readonly) NSUUID *proximityUUID;
 @property (strong, nonatomic, readonly) CLBeaconRegion *beaconRegion;
 @property (strong, nonatomic, readonly) CBPeripheralManager *peripheralManager;
 @property (strong, nonatomic, readonly) CLLocationManager *locationManager;
+@property (strong, nonatomic, readonly) NSDictionary *proximitySounds;
+@property (strong, nonatomic, readonly) NSDictionary *reginSounds;
+@property CLRegionState lastRegionState;
+@property CLProximity lastProximity;
+
 @property (weak, nonatomic) IBOutlet UIButton *startAdvertisingButton;
 @property (weak, nonatomic) IBOutlet UIButton *stopAdvertisingButton;
 @property (weak, nonatomic) IBOutlet UIButton *startMonitoringButton;
@@ -69,6 +84,12 @@ NSUInteger const kMiniPad               = 0xecd85729;
     }
     
     [self updateRegionLabelWithState:state];
+    
+    if (state != self.lastRegionState) {
+        [self playSoundForRegionState:state];
+    }
+    
+    self.lastRegionState = state;
 }
 
 -(void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
@@ -94,6 +115,12 @@ NSUInteger const kMiniPad               = 0xecd85729;
     if (beacons.count > 0) {
         CLBeacon *beacon = [beacons objectAtIndex:0];
         [self updateProximityLabelWithProximity:beacon.proximity];
+        
+        if (beacon.proximity != self.lastProximity) {
+            [self playSoundForProximity:beacon.proximity];
+        }
+        
+        self.lastProximity = beacon.proximity;
     }
 }
 
@@ -192,6 +219,24 @@ NSUInteger const kMiniPad               = 0xecd85729;
         || proximity == CLProximityNear;
 }
 
+-(void)playSoundForProximity:(CLProximity)proximity
+{
+    NSString *key = [self CLProximityToString:proximity];
+    NSNumber *value = [self.proximitySounds objectForKey:key];
+    if (value) {
+        AudioServicesPlaySystemSound(value.unsignedIntegerValue);
+    }
+}
+
+-(void)playSoundForRegionState:(CLRegionState)state
+{
+    NSString *key = [self CLRegionStateToString:state];
+    NSNumber *value = [self.reginSounds objectForKey:key];
+    if (value) {
+        AudioServicesPlaySystemSound(value.unsignedIntegerValue);
+    }
+}
+
 -(NSString *)CBPeriperalManagerStateToString:(CBPeripheralManagerState)state
 {
     NSString *result = nil;
@@ -284,6 +329,18 @@ NSUInteger const kMiniPad               = 0xecd85729;
     return self;
 }
 
+-(void)configureSounds
+{
+    _proximitySounds = @{[self CLProximityToString:CLProximityFar]: [NSNumber numberWithUnsignedInteger:kFarSoundID],
+                         [self CLProximityToString:CLProximityImmediate]: [NSNumber numberWithUnsignedInteger:kImmediateSoundID],
+                         [self CLProximityToString:CLProximityNear]: [NSNumber numberWithUnsignedInteger:kNearSoundID],
+                         [self CLProximityToString:CLProximityUnknown]: [NSNumber numberWithUnsignedInteger:kUnknownSoundID]};
+    
+    _reginSounds = @{[self CLRegionStateToString:CLRegionStateInside]: [NSNumber numberWithUnsignedInteger:kInsideSoundID],
+                     [self CLRegionStateToString:CLRegionStateOutside]: [NSNumber numberWithUnsignedInteger:kOutsideSoundID],
+                     [self CLRegionStateToString:CLRegionStateUnknown]: [NSNumber numberWithUnsignedInteger:kUnknownSoundID]};
+}
+
 -(void)configureBeacon
 {
     NSString *deviceName = [UIDevice currentDevice].name;
@@ -327,6 +384,7 @@ NSUInteger const kMiniPad               = 0xecd85729;
     [super viewDidLoad];
     
     NSLog(@"CSBeaconViewController view did load");
+    [self configureSounds];
     [self configureBeacon];
     [self configurePeripheralAndLocationManagers];
 }
