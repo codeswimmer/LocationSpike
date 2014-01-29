@@ -224,7 +224,7 @@ NSUInteger const kOutsideSoundID        = 1024;
     NSString *key = [self CLProximityToString:proximity];
     NSNumber *value = [self.proximitySounds objectForKey:key];
     if (value) {
-        AudioServicesPlaySystemSound(value.unsignedIntegerValue);
+        AudioServicesPlaySystemSound(value.unsignedLongValue);
     }
 }
 
@@ -233,7 +233,7 @@ NSUInteger const kOutsideSoundID        = 1024;
     NSString *key = [self CLRegionStateToString:state];
     NSNumber *value = [self.reginSounds objectForKey:key];
     if (value) {
-        AudioServicesPlaySystemSound(value.unsignedIntegerValue);
+        AudioServicesPlaySystemSound(value.unsignedLongValue);
     }
 }
 
